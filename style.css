@@ -14,8 +14,6 @@ body {
   font-family: "PT Serif", serif;
   color: #333;
   padding: 2% 0 0 5%;
-
-  min-height: 100%;
 }
 
 /*header*/
@@ -44,6 +42,10 @@ img {
   width: 100%;
 }
 
+.column_left {
+  position: relative;
+  top: 22%;
+}
 h4,
 h5 {
   text-transform: capitalize;
@@ -61,11 +63,106 @@ h5 {
 /*footer*/
 footer {
   color: #a9a9a9;
-  margin-top: auto;
 }
 
 .username {
   text-decoration: underline;
   font-weight: bold;
   text-transform: capitalize;
+}
+
+/*sm mobile*/
+@media screen and (max-width: 320px) {
+}
+
+/*sm tablets*/
+@media screen and (min-width: 425px) and (orientation: portrait) {
+  body {
+    font-size: 1rem;
+  }
+
+  h5 {
+    bottom: 66%;
+  }
+}
+/*md tablets*/
+@media screen and (min-width: 576px) and (orientation: portrait) {
+  body {
+    font-size: 1.2rem;
+  }
+
+  h5 {
+    bottom: 65%;
+    left: 54%;
+  }
+}
+
+/*lg tablets*/
+@media screen and (min-width: 768px) and (orientation: portrait) {
+  body {
+    font-size: 1.2rem;
+    padding: 0% 0 0 5%;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    right: 5%;
+  }
+
+  h5 {
+    bottom: 65%;
+    left: 54%;
+  }
+}
+
+/*sm & md computers*/
+@media screen and (min-width: 769px) and (orientation: landscape) {
+  body {
+    font-size: 1.15rem;
+    padding: 0 15%;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+  }
+
+  main {
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: repeat(3, 26.527%);
+    column-gap: 10%;
+    row-gap: 8%;
+    min-height: 100vh;
+  }
+
+  .column_left {
+    position: relative;
+    top: 0;
+  }
+
+  .column_middle {
+    position: relative;
+    top: 35%;
+  }
+}
+
+/* lg computers*/
+@media screen and (min-width: 1440px) and (orientation: landscape) {
+  body {
+    font-size: 1.5rem;
+    padding: 0 15%;
+  }
+  h5 {
+    bottom: 50%;
+    left: 53.5%;
+  }
+
+  .column_left {
+    position: relative;
+    top: 0;
+  }
 }
