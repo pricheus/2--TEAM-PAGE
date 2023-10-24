@@ -5,8 +5,7 @@
 }
 
 html {
-  font-size: 14px;
-  height: 100%;
+  font-size: 12px;
 }
 
 body {
@@ -36,6 +35,7 @@ main {
   grid-template-columns: repeat(2, 40%);
   column-gap: 10%;
   row-gap: 8%;
+  min-height: 100vh;
 }
 
 img {
@@ -46,6 +46,7 @@ img {
   position: relative;
   top: 22%;
 }
+
 h4,
 h5 {
   text-transform: capitalize;
@@ -55,7 +56,7 @@ h5 {
   transform: rotate(90deg);
   position: relative;
   left: 56%;
-  bottom: 67%;
+  bottom: 42.5vw;
   font-weight: 300;
   text-transform: uppercase;
 }
@@ -63,6 +64,11 @@ h5 {
 /*footer*/
 footer {
   color: #a9a9a9;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-top: 10% 0;
+  text-align: center;
 }
 
 .username {
@@ -72,32 +78,20 @@ footer {
 }
 
 /*sm mobile*/
-@media screen and (max-width: 320px) {
-}
 
 /*sm tablets*/
-@media screen and (min-width: 425px) and (orientation: portrait) {
+@media screen and (min-width: 500px) and (orientation: portrait) {
   body {
     font-size: 1rem;
   }
 
   h5 {
-    bottom: 66%;
-  }
-}
-/*md tablets*/
-@media screen and (min-width: 576px) and (orientation: portrait) {
-  body {
-    font-size: 1.2rem;
-  }
-
-  h5 {
-    bottom: 65%;
+    bottom: 40vw;
     left: 54%;
   }
 }
 
-/*lg tablets*/
+/*md tablets*/
 @media screen and (min-width: 768px) and (orientation: portrait) {
   body {
     font-size: 1.2rem;
@@ -112,12 +106,18 @@ footer {
   }
 
   h5 {
-    bottom: 65%;
-    left: 54%;
+    bottom: 39vw;
   }
 }
 
-/*sm & md computers*/
+/*lg tablets*/
+@media screen and (min-width: 1020px) and (orientation: portrait) {
+  h5 {
+    bottom: 38.75vw;
+  }
+}
+
+/*sm computers*/
 @media screen and (min-width: 769px) and (orientation: landscape) {
   body {
     font-size: 1.15rem;
@@ -148,16 +148,51 @@ footer {
     position: relative;
     top: 35%;
   }
+
+  h5 {
+    bottom: 20vw;
+  }
+  footer {
+    margin-top: 10%;
+  }
+}
+
+/* md computers*/
+@media screen and (min-width: 1020px) and (orientation: landscape) {
+  h5 {
+    bottom: 20.25vw;
+  }
+  footer {
+    padding: 10% 0 5% 0;
+  }
 }
 
 /* lg computers*/
+@media screen and (min-width: 1400px) and (orientation: landscape) {
+  body {
+    font-size: 1.5rem;
+    padding: 0 15%;
+  }
+
+  h5 {
+    bottom: 11vw;
+    left: 53.5%;
+  }
+
+  .column_left {
+    position: relative;
+    top: 0;
+  }
+}
+
+/* 2lg computers*/
 @media screen and (min-width: 1440px) and (orientation: landscape) {
   body {
     font-size: 1.5rem;
     padding: 0 15%;
   }
   h5 {
-    bottom: 50%;
+    bottom: 65%;
     left: 53.5%;
   }
 
