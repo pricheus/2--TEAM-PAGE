@@ -67,8 +67,8 @@ footer {
   position: absolute;
   left: 0;
   right: 0;
-  margin-top: 10% 0;
   text-align: center;
+  padding: 30% 0 5% 0;
 }
 
 .username {
@@ -88,6 +88,10 @@ footer {
   h5 {
     bottom: 40vw;
     left: 54%;
+  }
+
+  footer {
+    padding: 50% 0 5% 0;
   }
 }
 
@@ -153,7 +157,7 @@ footer {
     bottom: 20vw;
   }
   footer {
-    margin-top: 10%;
+    padding: 25% 0 5% 0;
   }
 }
 
@@ -162,8 +166,10 @@ footer {
   h5 {
     bottom: 20.25vw;
   }
-  footer {
-    padding: 10% 0 5% 0;
+
+  .column_middle {
+    position: relative;
+    top: 35%;
   }
 }
 
@@ -182,6 +188,11 @@ footer {
   .column_left {
     position: relative;
     top: 0;
+  }
+
+  .column_middle {
+    position: relative;
+    top: 35%;
   }
 }
 
